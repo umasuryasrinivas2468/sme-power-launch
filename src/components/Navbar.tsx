@@ -42,7 +42,6 @@ const Navbar = () => {
           <nav className="hidden md:flex items-center space-x-6">
             <NavItem label="Features" href="#features" />
             <NavItem label="Testimonials" href="#testimonials" />
-            <NavItem label="Partners" href="#partners" />
             <NavItem label="FAQ" href="#faq" />
             <NavItem label="Contact" href="#contact" />
           </nav>
