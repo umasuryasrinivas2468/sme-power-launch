@@ -6,13 +6,6 @@ const Footer = () => {
 
   const footerLinks = [
     {
-      title: "Product",
-      links: [
-        { name: "Features", href: "#features" },
-        { name: "Business Account", href: "#business-account" }
-      ]
-    },
-    {
       title: "Company",
       links: [
         { name: "About Us", href: "/about" },
@@ -28,7 +21,6 @@ const Footer = () => {
         { name: "Help Center", href: "/help" },
         { name: "Community", href: "/community" },
         { name: "Status", href: "/status" },
-        { name: "Webinars", href: "/webinars" },
         { name: "Contact", href: "#contact" }
       ]
     },
@@ -54,10 +46,10 @@ const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white pt-16 pb-8">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-2 md:grid-cols-6 gap-8 mb-16">
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-8 mb-16">
           <div className="col-span-2">
             <Link to="/" className="inline-block mb-6">
-              <span className="text-2xl font-bold text-white">SMEPower</span>
+              <span className="text-2xl font-bold text-white">SMEAczen</span>
             </Link>
             <p className="text-gray-400 mb-6 max-w-xs">
               Empowering India's small businesses with modern banking solutions designed for growth.
@@ -105,7 +97,7 @@ const Footer = () => {
         <div className="border-t border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm mb-4 md:mb-0">
-              © {currentYear} SMEPower. All rights reserved.
+              © {currentYear} SMEAczen. All rights reserved.
             </p>
             <div className="flex items-center space-x-4">
               <img
