@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import { Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
 
@@ -10,40 +9,37 @@ const Footer = () => {
       title: "Product",
       links: [
         { name: "Features", href: "#features" },
-        { name: "Pricing", href: "#" },
-        { name: "Business Account", href: "#" },
-        { name: "Integrations", href: "#" },
-        { name: "API Documentation", href: "#" }
+        { name: "Business Account", href: "#business-account" }
       ]
     },
     {
       title: "Company",
       links: [
-        { name: "About Us", href: "#" },
-        { name: "Careers", href: "#" },
-        { name: "Press", href: "#" },
-        { name: "Blog", href: "#" },
+        { name: "About Us", href: "/about" },
+        { name: "Careers", href: "/careers" },
+        { name: "Press", href: "/press" },
+        { name: "Blog", href: "/blog" },
         { name: "Partners", href: "#partners" }
       ]
     },
     {
       title: "Resources",
       links: [
-        { name: "Help Center", href: "#" },
-        { name: "Community", href: "#" },
-        { name: "Status", href: "#" },
-        { name: "Webinars", href: "#" },
+        { name: "Help Center", href: "/help" },
+        { name: "Community", href: "/community" },
+        { name: "Status", href: "/status" },
+        { name: "Webinars", href: "/webinars" },
         { name: "Contact", href: "#contact" }
       ]
     },
     {
       title: "Legal",
       links: [
-        { name: "Privacy Policy", href: "#" },
-        { name: "Terms of Service", href: "#" },
-        { name: "Security", href: "#" },
-        { name: "Compliance", href: "#" },
-        { name: "GDPR", href: "#" }
+        { name: "Privacy Policy", href: "/privacy" },
+        { name: "Terms of Service", href: "/terms" },
+        { name: "Security", href: "/security" },
+        { name: "Compliance", href: "/compliance" },
+        { name: "GDPR", href: "/gdpr" }
       ]
     }
   ];
@@ -59,7 +55,6 @@ const Footer = () => {
     <footer className="bg-gray-900 text-white pt-16 pb-8">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-2 md:grid-cols-6 gap-8 mb-16">
-          {/* Company Info */}
           <div className="col-span-2">
             <Link to="/" className="inline-block mb-6">
               <span className="text-2xl font-bold text-white">SMEPower</span>
@@ -86,7 +81,6 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Footer Links */}
           {footerLinks.map((column) => (
             <div key={column.title} className="col-span-1">
               <h3 className="text-sm font-semibold text-white tracking-wider uppercase mb-4">
@@ -108,7 +102,6 @@ const Footer = () => {
           ))}
         </div>
 
-        {/* Bottom Footer */}
         <div className="border-t border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm mb-4 md:mb-0">
